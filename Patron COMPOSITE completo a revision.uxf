@@ -1,0 +1,77 @@
+<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><element><id>UMLClass</id><coordinates><x>297</x><y>105</y><w>261</w><h>135</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+APP
+--
+-a
+--
++imprimirTicket(ArrayList&lt;Item&gt;,Usuario):Ticket
+-validarItems((ArrayList&lt;Item&gt;):boolean
+-validaritem(Item):boolean
+-validacionInterna (ArrayList&lt;Item&gt;):void
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>711</x><y>393</y><w>189</w><h>135</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+/Producto/
+--
+-nombre:String
+-precio:int
+
+--
+-item(String,int)
++sosEsteProducto(String):boolean
+/+getPrecio():int/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>882</x><y>555</y><w>189</w><h>117</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+ProductoCompúesto
+--
+-DESCUENTO: int=10
+--
+-Item(Strimg, Item[])
++getPrecio():int
++agregarItem(Item):void
++eliminarItem(Item):void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>630</x><y>573</y><w>189</w><h>90</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+ProductoIndividual
+--
+-a
+--
++getPrecio():int
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>864</x><y>519</y><w>45</w><h>54</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;30;40</additional_attributes></element><element><id>Relation</id><coordinates><x>774</x><y>519</y><w>45</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>30;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>891</x><y>474</y><w>90</w><h>99</h></coordinates><panel_attributes>-items
+lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>10;10;80;90</additional_attributes></element><element><id>Relation</id><coordinates><x>423</x><y>231</y><w>306</w><h>261</h></coordinates><panel_attributes>-productosActivos
+lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>320;260;50;260;50;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>657</x><y>87</y><w>243</w><h>108</h></coordinates><panel_attributes>&lt;&lt;class&gt;&gt;
+Ticket
+--
+
+--
++calcularPrecio():int
++mostrar():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>828</x><y>186</y><w>54</w><h>99</h></coordinates><panel_attributes>-items
+lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>549</x><y>132</y><w>126</w><h>27</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>120;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>765</x><y>348</y><w>27</w><h>63</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>UMLActor</id><coordinates><x>360</x><y>726</y><w>54</w><h>99</h></coordinates><panel_attributes>Actor</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>504</x><y>762</y><w>90</w><h>27</h></coordinates><panel_attributes>_:APP_
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>756</x><y>762</y><w>90</w><h>27</h></coordinates><panel_attributes>Producto
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>891</x><y>762</y><w>90</w><h>27</h></coordinates><panel_attributes>_:Ticket_
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>96</y><w>189</w><h>99</h></coordinates><panel_attributes>&lt;&lt;class&gt;&gt;
+Usuario
+--
+-nombre:String
+--
++</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>150</y><w>135</w><h>36</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>10;10;130;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>99</x><y>519</y><w>108</w><h>63</h></coordinates><panel_attributes>Note..
+producto no debe tener los 2 constructores</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>153</x><y>627</y><w>405</w><h>63</h></coordinates><panel_attributes>Note..
+se puede repetir las clases? en el diagrama de secuencia , ej: ticket ticket</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>756</x><y>267</y><w>144</w><h>90</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Item
+--
+-cantidad:int
+--
++mostrar():void
++calcularPrecio():int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>801</x><y>348</y><w>72</w><h>63</h></coordinates><panel_attributes>-producto
+lt=&lt;-</panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>765</x><y>186</y><w>27</w><h>99</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>972</x><y>96</y><w>144</w><h>72</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+Vendible
+--
++mostrar():void
++calcularPrecio():int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>891</x><y>123</y><w>99</w><h>27</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>90;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>891</x><y>159</y><w>117</w><h>162</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>110;10;10;160</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>540</x><y>861</y><w>27</w><h>252</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>378</x><y>843</y><w>18</w><h>252</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>387</x><y>852</y><w>171</w><h>36</h></coordinates><panel_attributes>-imprimirTicket
+lt=&lt;-</panel_attributes><additional_attributes>170;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>558</x><y>1032</y><w>387</w><h>36</h></coordinates><panel_attributes>-instaciarTicket
+lt=&lt;-</panel_attributes><additional_attributes>410;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>783</x><y>861</y><w>27</w><h>90</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>558</x><y>879</y><w>243</w><h>36</h></coordinates><panel_attributes>-validarItems
+lt=&lt;-</panel_attributes><additional_attributes>250;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>558</x><y>924</y><w>243</w><h>27</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;250;10</additional_attributes></element><element><id>Relation</id><coordinates><x>378</x><y>798</y><w>27</w><h>63</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>780</y><w>27</w><h>99</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>792</x><y>780</y><w>27</w><h>99</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>927</x><y>780</y><w>27</w><h>153</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>Relation</id><coordinates><x>549</x><y>1104</y><w>27</w><h>135</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;130</additional_attributes></element><element><id>Relation</id><coordinates><x>378</x><y>1086</y><w>27</w><h>108</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>783</x><y>942</y><w>27</w><h>72</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>558</x><y>1068</y><w>387</w><h>27</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;410;10</additional_attributes></element><element><id>Relation</id><coordinates><x>387</x><y>1050</y><w>171</w><h>27</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;170;10</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>927</x><y>915</y><w>27</w><h>198</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>927</x><y>1104</y><w>27</w><h>72</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element></diagram>
