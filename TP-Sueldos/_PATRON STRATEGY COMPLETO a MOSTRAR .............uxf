@@ -1,0 +1,72 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>1350</x><y>0</y><w>210</w><h>100</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+
+--
+-a
+--
+-a
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>760</x><y>50</y><w>210</w><h>160</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Empleado
+--
+-nombre:String
+-sueldoBrutoAnualBASE:int
+--
++getSueldoNetoAnualBASE():int
++getSueldoBrutoAnualBASE():int
+
++calcularSueldoBruto():int
++calcularSueldoNeto():int
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>760</x><y>310</y><w>210</w><h>100</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+/Categoria/
+--
+-a
+--
+/+calculoDeSueldo(int):int/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1000</x><y>470</y><w>210</w><h>100</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Categoría C
+--
+--
++calculoDeSueldo(int):int
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>520</x><y>470</y><w>210</w><h>100</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Categoría A
+--
+--
++calculoDeSueldo(int):int
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>760</x><y>470</y><w>210</w><h>100</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Categoría B
+--
+--
++calculoDeSueldo(int):int
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>830</x><y>200</y><w>90</w><h>140</h></coordinates><panel_attributes>-categoria
+lt=&lt;-
+m1=1</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>430</x><y>330</y><w>180</w><h>80</h></coordinates><panel_attributes>Note..
+
+CLASE O INTERFAZ?</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>430</x><y>60</y><w>240</w><h>240</h></coordinates><panel_attributes>Note..
+
+CLASE O INTERFAZ?
+
+ESTA BIEN QUE PONGAMOS 
+por ejemplo dentro de 
+
+calculoDeSueldo(int)?
+
+para un dia a dia laboral no seria
+mejor al entedimiento un:
+
++calculoDeSueldo(sueldoBaseAnual: int):int
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>610</x><y>400</y><w>190</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>170;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>840</x><y>400</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>950</x><y>400</y><w>90</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;70;70</additional_attributes></element><element><id>UMLActor</id><coordinates><x>130</x><y>740</y><w>60</w><h>110</h></coordinates><panel_attributes>Actor</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>340</x><y>770</y><w>100</w><h>30</h></coordinates><panel_attributes>_:Empleado_
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>150</x><y>870</y><w>20</w><h>130</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>380</x><y>870</y><w>20</w><h>120</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>600</x><y>870</y><w>20</w><h>120</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>570</x><y>770</y><w>100</w><h>30</h></coordinates><panel_attributes>_:Categoria B_
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>890</y><w>240</w><h>40</h></coordinates><panel_attributes>calcularSueldoNeto()
+lt=&lt;-</panel_attributes><additional_attributes>220;20;10;20</additional_attributes></element><element><id>UMLNote</id><coordinates><x>1050</x><y>70</y><w>180</w><h>80</h></coordinates><panel_attributes>Note..
+
+con la logica de calcular 
+sueldos podria hacer otra cosas
+encapsulando la logica </panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>390</x><y>890</y><w>230</w><h>40</h></coordinates><panel_attributes>calculoDeSueldo(int)
+lt=&lt;-</panel_attributes><additional_attributes>210;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>390</x><y>930</y><w>230</w><h>40</h></coordinates><panel_attributes>" sueldo (int) "
+lt=&lt;-</panel_attributes><additional_attributes>10;20;210;20</additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>930</y><w>240</w><h>40</h></coordinates><panel_attributes>" sueldo (int) "
+lt=&lt;-</panel_attributes><additional_attributes>10;20;220;20</additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>790</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>790</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>150</x><y>820</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>980</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>980</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>150</x><y>990</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLNote</id><coordinates><x>790</x><y>810</y><w>180</w><h>80</h></coordinates><panel_attributes>Note..
+
+esto agarralo con pinzas</panel_attributes><additional_attributes></additional_attributes></element></diagram>
