@@ -1,0 +1,33 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>70</x><y>290</y><w>210</w><h>70</h></coordinates><panel_attributes>Mapeador
+--
++field: type
+--
++getDireccion(x,y) : String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>820</x><y>290</y><w>210</w><h>70</h></coordinates><panel_attributes>BingMaps
+--
++field: type
+--
++obtenerDireccion(decimal,decimal) : String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>820</x><y>430</y><w>210</w><h>70</h></coordinates><panel_attributes>GoogleMaps
+--
++field: type
+--
++getAdress(double, double) : String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>390</x><y>290</y><w>270</w><h>70</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+InterfazObjetivo
+--
++solicitudMapeador(decimal, decimal): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>400</x><y>430</y><w>270</w><h>70</h></coordinates><panel_attributes>Adaptador
+--
++solicitudMapeador(decimal, decimal): String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>320</y><w>140</w><h>30</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>120;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>660</x><y>460</y><w>180</w><h>30</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>160;10;10;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>120</x><y>140</y><w>410</w><h>70</h></coordinates><panel_attributes>Note..
+bg=white
+
+Por que la flecha de mapeador a la interfaz es flecha simple?</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>550</x><y>140</y><w>490</w><h>100</h></coordinates><panel_attributes>Note..
+bg=white
+
+Que pasaria si agregamos en vez de google maps, un servicio como amazon maps?
+
+Se debería crear otro adaptador? si es así, heredaria de adaptador?</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>510</x><y>350</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLNote</id><coordinates><x>560</x><y>570</y><w>340</w><h>110</h></coordinates><panel_attributes>Note..
+bg=white
+
+Damos por hecho que sale con double
+
+En la clase adaptador, no habría que crear un metodo para 
+transformar los parametros de decimal a double?</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>720</x><y>520</y><w>30</w><h>60</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element></diagram>
