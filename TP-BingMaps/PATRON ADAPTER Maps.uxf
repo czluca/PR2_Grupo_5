@@ -1,0 +1,42 @@
+<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><element><id>UMLClass</id><coordinates><x>120</x><y>56</y><w>168</w><h>56</h></coordinates><panel_attributes>Mapeador
+--
++field: type
+--
++getDireccion(x,y) : String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>720</x><y>56</y><w>168</w><h>56</h></coordinates><panel_attributes>BingMaps
+--
++field: type
+--
++obtenerDireccion(decimal,decimal) : String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>720</x><y>168</y><w>168</w><h>56</h></coordinates><panel_attributes>GoogleMaps
+--
++field: type
+--
++getAdress(double, double) : String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>376</x><y>56</y><w>216</w><h>56</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+InterfazObjetivo
+--
++solicitudMapeador(decimal, decimal): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>280</x><y>168</y><w>320</w><h>56</h></coordinates><panel_attributes>Adaptador
+--
+--
++solicitudMapeador(convertir(decimal), convertir(decimal)) : String
+-convertir(decimal): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>592</x><y>192</y><w>144</w><h>24</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>160;10;10;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>152</x><y>576</y><w>264</w><h>136</h></coordinates><panel_attributes>Note..
+bg=white
+
+La interfaz debería ser parte del diagrama de secuencia?
+
+El adaptador, si ya no sirve no se descarta?</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>472</x><y>104</y><w>24</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>72</y><w>112</w><h>24</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>120;10;10;10</additional_attributes></element><element><id>UMLActor</id><coordinates><x>240</x><y>280</y><w>48</w><h>88</h></coordinates><panel_attributes>Actor</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>256</x><y>376</y><w>16</w><h>160</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>264</x><y>392</y><w>144</w><h>32</h></coordinates><panel_attributes>getDireccion(dec,dec)
+lt=&lt;-</panel_attributes><additional_attributes>160;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>256</x><y>344</y><w>24</w><h>48</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;40;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>392</x><y>336</y><w>24</w><h>72</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>368</x><y>320</y><w>80</w><h>24</h></coordinates><panel_attributes>_:Mapeador_
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>392</x><y>392</y><w>16</w><h>120</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>392</x><y>504</y><w>24</w><h>72</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>416</y><w>176</w><h>32</h></coordinates><panel_attributes>solicitudMapeador(dec,dec)
+lt=&lt;-</panel_attributes><additional_attributes>200;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>568</x><y>432</y><w>360</w><h>40</h></coordinates><panel_attributes>solicitudMapeador(convertir(decimal), convertir(decimal)) : String
+
+lt=&lt;-</panel_attributes><additional_attributes>430;20;10;20</additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>912</x><y>480</y><w>16</w><h>16</h></coordinates><panel_attributes>type=termination</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>336</y><w>24</w><h>96</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>560</x><y>416</y><w>16</w><h>40</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>912</x><y>432</y><w>16</w><h>40</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>912</x><y>336</y><w>24</w><h>112</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>880</x><y>320</y><w>80</w><h>24</h></coordinates><panel_attributes>_:Adaptador_
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>528</x><y>320</y><w>80</w><h>24</h></coordinates><panel_attributes>_:InterfazObjetivo_
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1088</x><y>320</y><w>80</w><h>24</h></coordinates><panel_attributes>_:GoogleMaps_
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1120</x><y>336</y><w>24</w><h>128</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;140;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>448</y><w>24</w><h>136</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;150;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>920</x><y>448</y><w>216</w><h>40</h></coordinates><panel_attributes>getAdress(double, double) : String
+
+lt=&lt;-</panel_attributes><additional_attributes>250;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1120</x><y>448</y><w>16</w><h>64</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1120</x><y>504</y><w>24</w><h>64</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>912</x><y>472</y><w>24</w><h>120</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;130;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>488</y><w>736</w><h>40</h></coordinates><panel_attributes>direccion: String
+
+lt=&lt;-</panel_attributes><additional_attributes>10;20;900;20</additional_attributes></element></diagram>
