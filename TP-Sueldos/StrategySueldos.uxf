@@ -1,0 +1,51 @@
+<diagram program="umletino" version="15.1"><zoom_level>7</zoom_level><element><id>UMLActor</id><coordinates><x>322</x><y>329</y><w>42</w><h>77</h></coordinates><panel_attributes>Actor</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>329</x><y>434</y><w>14</w><h>119</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>329</x><y>406</y><w>21</w><h>42</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>546</x><y>378</y><w>70</w><h>21</h></coordinates><panel_attributes>_:Empleado_
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>672</x><y>378</y><w>70</w><h>21</h></coordinates><panel_attributes>_:CategoriaB_
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>567</x><y>434</y><w>14</w><h>119</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>567</x><y>413</y><w>21</w><h>35</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;30</additional_attributes></element><element><id>Relation</id><coordinates><x>336</x><y>434</y><w>245</w><h>28</h></coordinates><panel_attributes>lt=&lt;-
++calcularSueldoNeto(double)</panel_attributes><additional_attributes>330;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>357</x><y>0</y><w>168</w><h>119</h></coordinates><panel_attributes>&gt;&gt;Class&lt;&lt;
+Empleado
+-
+-nombre; String
+-sueldoBruto: double
+-inicial: String
+-diaIngreso: int
+-cantHijos:int
+-
++setCat(Categoria):void
++calcularSueldoNeto(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>686</x><y>35</y><w>154</w><h>77</h></coordinates><panel_attributes>&gt;&gt;Class&lt;&lt;
+Categoria
+-
+
+-
++calcular(Empleado):double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>518</x><y>56</y><w>182</w><h>28</h></coordinates><panel_attributes>lt=&lt;-
+-categoria</panel_attributes><additional_attributes>240;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>497</x><y>154</y><w>154</w><h>77</h></coordinates><panel_attributes>&gt;&gt;Class&lt;&lt;
+CategoriaA
+-
+
+-
++calcular(Empleado):double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>686</x><y>154</y><w>154</w><h>77</h></coordinates><panel_attributes>&gt;&gt;Class&lt;&lt;
+CategoriaB
+-
+
+-
++calcular(Empleado):double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>875</x><y>154</y><w>154</w><h>77</h></coordinates><panel_attributes>&gt;&gt;Class&lt;&lt;
+CategoriaC
+-
+_-MONTO: int=500_
+-
++calcular(Empleado):double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>574</x><y>105</y><w>203</w><h>63</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>270;10;270;40;10;40;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>756</x><y>105</y><w>224</w><h>63</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40;300;40;300;70</additional_attributes></element><element><id>Relation</id><coordinates><x>756</x><y>105</y><w>21</w><h>63</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>693</x><y>434</y><w>14</w><h>112</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>693</x><y>413</y><w>21</w><h>35</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;30</additional_attributes></element><element><id>Relation</id><coordinates><x>574</x><y>469</y><w>133</w><h>28</h></coordinates><panel_attributes>lt=&lt;-
++calcular(Empleado)</panel_attributes><additional_attributes>170;20;10;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>721</x><y>420</y><w>413</w><h>154</h></coordinates><panel_attributes>empiezaConVocal(Empleado.getNombre())
+--
+return Empleado.getSueldoBruto()- (Empleado.getSueldoBruto()*100) / Empleado.getCantHijos
+
+
+
+
+
+
+-.
+return Empleado.getSueldoBruto()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>574</x><y>525</y><w>133</w><h>28</h></coordinates><panel_attributes>lt=&lt;-
+Sueldo</panel_attributes><additional_attributes>10;20;170;20</additional_attributes></element><element><id>Relation</id><coordinates><x>336</x><y>532</y><w>245</w><h>28</h></coordinates><panel_attributes>lt=&lt;-
+Sueldo</panel_attributes><additional_attributes>10;20;330;20</additional_attributes></element></diagram>
